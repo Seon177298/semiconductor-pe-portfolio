@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: Install tooling + runtime deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff pytest
+          # CPU torch keeps the wafer-map / FBM tests importable in CI
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy pandas scipy scikit-learn matplotlib
+          # platform service tests
+          pip install -r manufacturing_quality_platform/requirements.txt || true
+
+      - name: Lint (ruff)
+        run: ruff check .
+
+      - name: Unit tests (3 projects) + numeric regression
+        run: |
+          pytest \
+            fail_bit_map_pe/tests \
+            secom_quality_8d/tests \
+            manufacturing_quality_platform/tests \
+            tests
+        env:
+          MPLBACKEND: Agg

@@ -1,0 +1,13 @@
+domain,escape_weight,overkill_weight,cost_opt_operating_point
+FBM,3,1,0.02
+FBM,10,1,0.02
+FBM,30,1,0.02
+FBM,1,1,0.0
+FBM,1,3,0.0
+FBM,1,10,-0.02
+SECOM,3,1,0.15
+SECOM,10,1,0.1
+SECOM,30,1,0.1
+SECOM,1,1,0.3
+SECOM,1,3,0.3
+SECOM,1,10,0.3

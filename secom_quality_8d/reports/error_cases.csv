@@ -1,0 +1,38 @@
+sample_index,strategy,model,true_defect,defect_score,threshold,predicted_defect,error_type,inspection_note
+209,median_all,random_forest,0,0.26695391278764957,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+1272,median_all,random_forest,0,0.2641406200576719,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+44,median_all,random_forest,0,0.2581742476007241,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+242,median_all,random_forest,0,0.24621685689671477,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+216,median_all,random_forest,0,0.24208504344634002,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+170,median_all,random_forest,0,0.22046234251199995,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+15,median_all,random_forest,0,0.21980944271069583,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+121,median_all,random_forest,0,0.21146253007240073,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+190,median_all,random_forest,0,0.21082124384002376,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+27,median_all,random_forest,0,0.20957634094272476,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+5,median_all,random_forest,0,0.1815235439613327,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+215,median_all,random_forest,0,0.17503871478121297,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+187,median_all,random_forest,0,0.17502776827631006,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+183,median_all,random_forest,0,0.1744200821572049,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+1222,median_all,random_forest,0,0.17187410474632245,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+1225,median_all,random_forest,0,0.16803482868507466,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+26,median_all,random_forest,0,0.16763988735944974,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+165,median_all,random_forest,0,0.16699893747744418,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+320,median_all,random_forest,0,0.1650980182706012,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+110,median_all,random_forest,0,0.16503357698609278,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+312,median_all,random_forest,0,0.16461380531104236,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+1397,median_all,random_forest,0,0.1624217304713772,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+174,median_all,random_forest,0,0.16038111116028594,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+1294,median_all,random_forest,0,0.15910023106568547,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+364,median_all,random_forest,0,0.15735482127085926,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+689,median_all,random_forest,0,0.1539024599739543,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+233,median_all,random_forest,0,0.15350837670932685,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+51,median_all,random_forest,0,0.1524044462002198,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+752,median_all,random_forest,0,0.1490403545286369,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+25,median_all,random_forest,0,0.14866329429343308,0.1,1,false_alarm,정상 sample이 defect로 분류된 case. 재검사 비용과 alarm fatigue 관점에서 점검한다.
+344,median_all,random_forest,1,0.09199304992449008,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.
+392,median_all,random_forest,1,0.09165774765782833,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.
+62,median_all,random_forest,1,0.0895343205309949,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.
+795,median_all,random_forest,1,0.07153249273461187,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.
+1151,median_all,random_forest,1,0.07145962272025519,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.
+273,median_all,random_forest,1,0.059709156094719475,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.
+1189,median_all,random_forest,1,0.048185216099859846,0.1,0,missed_defect,defect sample을 놓친 case. 고객 품질 리스크와 추가 sensor/label 검증 관점에서 점검한다.

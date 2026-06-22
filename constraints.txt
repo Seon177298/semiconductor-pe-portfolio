@@ -1,0 +1,10 @@
+# Reproducibility pins — the exact versions this portfolio was verified on
+# (python 3.9.6). Use as a constraints file so per-project requirements resolve
+# to the same versions:
+#     pip install -r fail_bit_map_pe/requirements.txt -c constraints.txt
+numpy==2.0.2
+pandas==2.3.3
+scipy==1.13.1
+scikit-learn==1.6.1
+matplotlib==3.9.4
+torch==2.8.0

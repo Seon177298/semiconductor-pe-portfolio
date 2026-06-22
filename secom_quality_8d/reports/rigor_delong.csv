@@ -1,0 +1,4 @@
+model_a,model_b,auc_a,auc_b,delong_p
+random_forest,logistic_regression,0.813,0.7204,0.1209
+random_forest,hist_gbm,0.813,0.7411,0.0283
+hist_gbm,logistic_regression,0.7411,0.7204,0.7251

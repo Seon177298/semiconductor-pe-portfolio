@@ -1,0 +1,7 @@
+class,rule_based,random_forest,cnn
+PASS,0.962,1.0,1.0
+SINGLE_BIT,1.0,1.0,1.0
+ROW,0.982,1.0,1.0
+COLUMN,0.982,1.0,1.0
+CLUSTER,1.0,1.0,0.971
+EDGE,0.974,1.0,1.0

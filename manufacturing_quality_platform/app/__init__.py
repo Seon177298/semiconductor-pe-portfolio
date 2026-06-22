@@ -1,0 +1,2 @@
+"""Manufacturing quality platform package."""
+

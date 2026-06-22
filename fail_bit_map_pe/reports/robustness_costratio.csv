@@ -1,0 +1,7 @@
+escape_weight,overkill_weight,cost_opt_guardband,escape_dppm_at_opt,overkill_dppm_at_opt
+30,1,0.06,43.33,955.35
+10,1,0.05,83.62,460.21
+3,1,0.04,137.18,209.96
+1,1,0.03,207.67,92.32
+1,3,0.02,298.92,37.69
+1,10,0.01,394.29,16.48

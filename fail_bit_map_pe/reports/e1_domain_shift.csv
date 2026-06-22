@@ -1,0 +1,3 @@
+eval,rf_acc
+"matched (σ0.02, mix0)",1.0
+"domain shift (σ0.10, mix0.30)",0.57

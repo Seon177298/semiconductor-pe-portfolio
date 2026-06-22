@@ -1,0 +1,10 @@
+hypothesis,temp_C,window_area_frac
+retention,25,1.0
+retention,80,0.14
+retention,85,0.058
+vdd,25,0.273
+vdd,80,0.273
+vdd,85,0.273
+hard,25,0.0
+hard,80,0.0
+hard,85,0.0

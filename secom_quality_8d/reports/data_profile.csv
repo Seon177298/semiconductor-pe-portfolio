@@ -1,0 +1,9 @@
+metric,value
+samples,1567.0
+features,590.0
+pass_count,1463.0
+defect_count,104.0
+defect_rate,0.06636885768985322
+features_with_missing,538.0
+max_feature_missing_ratio,0.9119336311423102
+median_feature_missing_ratio,0.0038289725590299937

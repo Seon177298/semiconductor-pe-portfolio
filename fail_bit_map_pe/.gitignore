@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+_prep/
+**/_prep/
+
+# regeneratable binary dataset (re-created by `python run_fbm.py`)
+reports/fbm_dataset.npz

@@ -1,0 +1,7 @@
+bin,type,description,default_disposition
+BIN1,PASS,정상 (fail 없음 또는 redundancy 내 복구 가능),ship
+BIN2,SINGLE_BIT,산발 single-bit fail (spare 로 복구 가능),ship-after-repair
+BIN3,ROW_FAIL,wordline/row 라인 fail (spare row 로 복구 시도),repair-limited
+BIN4,COLUMN_FAIL,bitline/column 라인 fail (spare column 로 복구 시도),repair-limited
+BIN5,CLUSTER_FAIL,"국소 cluster fail (particle 등, 복구 불가)",scrap
+BIN6,EDGE_FAIL,"edge ring fail (공정 edge 효과, 복구 불가)",scrap

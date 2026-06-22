@@ -1,0 +1,5 @@
+strategy,model,threshold,precision_defect,recall_defect,f1_defect,balanced_accuracy,roc_auc,false_alarm_rate,missed_defect_count,false_alarm_count,tp,tn,fp,fn
+median_all,logistic_regression,0.5,0.1935483870967742,0.3870967741935484,0.25806451612903225,0.6367302052785924,0.7203812316715542,0.11363636363636363,19,50,12,390,50,19
+median_all,random_forest,0.5,0.0,0.0,0.0,0.5,0.813049853372434,0.0,31,0,0,440,0,31
+drop_high_missing,logistic_regression,0.5,0.15625,0.3225806451612903,0.21052631578947367,0.5999266862170088,0.7120967741935484,0.12272727272727273,21,54,10,386,54,21
+drop_high_missing,random_forest,0.5,0.0,0.0,0.0,0.5,0.8154692082111437,0.0,31,0,0,440,0,31

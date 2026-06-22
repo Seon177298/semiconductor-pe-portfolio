@@ -1,0 +1,4 @@
+model,auc,auc_boot_ci_lo,auc_boot_ci_hi
+logistic_regression,0.7204,0.6154,0.825
+random_forest,0.813,0.733,0.8846
+hist_gbm,0.7411,0.6387,0.8339

@@ -1,0 +1,49 @@
+# Public-repo .gitignore — keep the repo light and honest.
+# Raw/large data, generated noise, secrets and caches stay out.
+
+# --- Raw / large public datasets (re-downloadable, not redistributed) ---
+**/data/raw/
+secom.data
+secom_labels.data
+*.pkl
+LSWMD*
+# Local dataset caches live outside the repo (~/.cache/...) by design.
+
+# --- Generated databases / binary artifacts ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Local-only notes ---
+**/_prep/
+
+# --- Secrets / credentials ---
+.env
+.env.*
+*.pem
+*.key
+**/kaggle.json
+**/credentials*
+secrets.*
+
+# --- Python caches / virtualenvs ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Editor workspace
+.obsidian/

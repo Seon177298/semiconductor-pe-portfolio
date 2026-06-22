@@ -1,0 +1,4 @@
+model,recall_mean,recall_ci_lo,recall_ci_hi,false_alarm_mean,false_alarm_ci_lo,false_alarm_ci_hi,auc_mean,auc_ci_lo,auc_ci_hi,missed_mean,median_threshold,recall_at_0p10_mean,recall_at_0p10_ci_lo,recall_at_0p10_ci_hi,false_alarm_at_0p10_mean,false_alarm_at_0p10_ci_lo,false_alarm_at_0p10_ci_hi,n_folds
+logistic_regression,0.471,0.3024,0.65,0.2775,0.2423,0.3234,0.6667,0.5541,0.7362,11.0,0.05,0.4357,0.3024,0.5714,0.2301,0.1969,0.2837,15
+random_forest,0.8814,0.5571,1.0,0.6798,0.2995,0.8532,0.7442,0.6712,0.8355,2.47,0.05,0.6667,0.5238,0.7929,0.3003,0.249,0.3448,15
+hist_gbm,0.5133,0.35,0.6392,0.234,0.204,0.2738,0.7045,0.6348,0.7736,10.13,0.05,0.3686,0.2071,0.5238,0.1262,0.0991,0.1556,15

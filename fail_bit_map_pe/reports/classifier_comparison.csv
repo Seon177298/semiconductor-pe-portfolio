@@ -1,0 +1,4 @@
+model,test_accuracy,macro_f1
+rule_based,0.9822,0.9859
+random_forest,1.0,1.0
+cnn,0.9978,0.996

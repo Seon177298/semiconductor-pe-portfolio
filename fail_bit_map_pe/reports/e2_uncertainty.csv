@@ -1,0 +1,6 @@
+metric,multiseed_median,multiseed_ci_lo,multiseed_ci_hi
+escape_dppm @ cost-opt,82.195,73.091,85.923
+overkill_dppm @ cost-opt,459.39,454.645,463.632
+escape_dies @ gb0,74.0,61.475,83.575
+cost reduction %,76.873,73.686,79.412
+cost-opt guardband (V),0.05,0.05,0.05
