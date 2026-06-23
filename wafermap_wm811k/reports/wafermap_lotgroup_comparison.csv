@@ -1,0 +1,4 @@
+variant,split,config,accuracy,macro_f1,weighted_f1,test_samples,recall_Scratch,recall_Loc,recall_Center
+random_baseline,random,cwp0.75/sampler=none/aug=False/loss=ce,0.9248,0.5839,0.9188,25943,0.1117,0.1558,0.5047
+lotgroup_baseline,lot_group,cwp0.75/sampler=none/aug=False/loss=ce,0.9154,0.6207,0.9261,25824,0.4012,0.1752,0.6132
+lotgroup_improved,lot_group,cwp0.0/sampler=sqrt/aug=True/loss=focal,0.9373,0.6747,0.9358,25824,0.1728,0.2281,0.765

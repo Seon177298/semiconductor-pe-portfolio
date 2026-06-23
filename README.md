@@ -1,11 +1,11 @@
 # 반도체 품질·불량분석 포트폴리오
 
-공개 데이터와 합성 데이터로 Product Engineering(PE) 관점의 데이터 의사결정을 재현한 3개 프로젝트 모음이다.
+공개 데이터와 합성 데이터로 Product Engineering(PE) 관점의 데이터 의사결정을 재현한 4개 프로젝트 모음이다.
 test 기준선을 어디에 둘지, escape(불량 유출)와 overkill(양품 폐기)의 trade-off를 어떻게 잡을지, 불량이 났을 때 무엇을 먼저 확인할지를 공통 주제로 한다.
 
 ## 데이터 경계
 
-이 저장소의 모든 분석은 공개 데이터(UCI SECOM, 선택적으로 MVTec AD)와 합성 데이터만 사용한다.
+이 저장소의 모든 분석은 공개 데이터(UCI SECOM, Kaggle WM-811K, 선택적으로 MVTec AD)와 합성 데이터만 사용한다.
 특정 회사·FAB·라인의 데이터, 실측치, 비공개 데이터는 포함하지 않는다. 결과는 원인 확정이 아니라 추가 점검 후보로 해석한다.
 
 ## 프로젝트
@@ -35,9 +35,18 @@ SECOM 분석을 CSV에서 끝내지 않고 SQLite → FastAPI → Streamlit → 
 
 > secom_quality_8d와 manufacturing_quality_platform의 SECOM 수치가 다른 것은 모델(random forest vs logistic regression), threshold(0.10 vs 0.50), feature 범위(전체 vs first-40)가 다르기 때문이다. 하나로 합치지 않고 설정과 함께 표기했다.
 
+### 4. wafermap_wm811k — lot-group 누수 제거 평가 + 취약클래스 recall 개선
+
+공개 WM-811K wafer map 데이터로 결함 패턴을 분류하되, 같은 lot의 wafer가 train/test에 섞이는 lot leakage를 제거하는 데 초점을 둔다. accuracy가 아니라 macro-F1과 취약클래스 recall을 lot 단위 group split 위에서 본다.
+
+- lot-group split(헤드라인): macro-F1 random 0.584 → lot-group 0.621 → 재학습 0.675, Center recall 0.505 → 0.765 (seed=42)
+- 재학습 = sqrt sampler + augmentation + focal loss(γ=2). Center·Loc·macro-F1 단조 개선
+- Scratch(최소 클래스 n=1,193)는 단일 seed 분산이 커 개선을 단정하지 않고 다중 seed가 필요하다고 정직 보고
+- `lotName`은 공개 데이터 proxy이며 실제 fab lot 이력이 아니다
+
 ## 공통 프레임 — cost-weighted operating point
 
-세 프로젝트는 같은 구조를 공유한다. operating point(threshold/guardband)를 accuracy가 아니라 escape↔overkill 비대칭 비용으로 고른다.
+이 중 cost 기반 세 프로젝트(fail_bit_map_pe · secom_quality_8d · manufacturing_quality_platform)는 같은 구조를 공유한다. operating point(threshold/guardband)를 accuracy가 아니라 escape↔overkill 비대칭 비용으로 고른다.
 
 > cost ≈ c_escape·escapes + c_overkill·overkills + c_retest·flagged (+ DPPM penalty)
 

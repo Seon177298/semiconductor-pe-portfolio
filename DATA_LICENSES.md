@@ -8,6 +8,7 @@
 | Dataset | 용도 | 출처 | 약관 / 비고 |
 | --- | --- | --- | --- |
 | **UCI SECOM** | 반도체 공정 sensor pass/fail | https://archive.ics.uci.edu/dataset/179/secom | 공개 연구용 데이터셋. feature 익명화 — 실제 공정/설비 원인으로 단정하지 않음. |
+| **Kaggle WM-811K** | wafer map 결함 패턴 분류 | https://www.kaggle.com/datasets/qingyi/wm811k-wafer-map | 공개 데이터셋(MIR Lab). `lotName`은 proxy이며 실제 fab lot 이력이 아님. 원시 데이터(`LSWMD.pkl`)는 저장소에 포함하지 않고 실행 시 내려받아 `~/.cache`에 캐시. |
 | **MVTec AD** (옵션) | 비전 검사 데모 | https://www.mvtec.com/company/research/datasets/mvtec-ad | **비상업 연구·교육용 라이선스.** 이 저장소에 포함하지 않으며, 미설치 시 UI가 "not installed"로 표시. 현장/회사 데이터로 표현하지 않음. |
 
 ## 합성(synthetic) 데이터
